@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- 画像遅延読み込み用ライブラリ -->
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
   <meta charset="utf-8">
   <title>三上徹朗</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -71,7 +73,7 @@
         <div class="col-lg-12">
           <h1>三上 徹朗</h1>
           <h2>てってけ氏</h2>
-          <h3>どこにでもいる平凡過ぎて屁が出る元高専生の大学院生．<br>頑張るゾイという自戒の念と何かの感想を記載しておく個人ページ</h3>
+          <h3>どこにでもいる平凡過ぎて屁が出る元高専生の大学院生．<br>頑張るゾイという自戒の念と何かの感想や記録を残しておく個人ページ</h3>
         </div>
         <!--/.col-lg-12 -->
       </div>
@@ -550,7 +552,7 @@
           <h5>Creating</h5>
         </div>
         <div class="col-lg-6">
-          <p><a href = "http://sima-tetteke.sakura.ne.jp/generator/Koraru/index.html"><img class="img-responsive" src="img/koraru.PNG" alt=""></a></p>
+          <p><a href = "http://sima-tetteke.sakura.ne.jp/generator/Koraru/index.html"><img class="lazyload" class="img-responsive" src="img/koraru.PNG" alt=""></a></p>
         </div>
         <div class="col-lg-3">
           <p>クソコラ画像作成アプリ「コラる」&nbsp;<a href = "http://sima-tetteke.sakura.ne.jp/generator/Koraru/index.html"><i class="fa fa-link"></i></a></p> 
@@ -747,6 +749,8 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
+  <script>
+    lazyload();
+  </script>
 </body>
 </html>
