@@ -18,6 +18,17 @@ jQuery(document).ready(function( $ ) {
     interval: 3500
   });
 
+  $('.hov').hover(
+    function() {
+      $(this).fadeTo("4000",0.3);
+        //マウスカーソルが重なった時の処理
+    },
+    function() {
+      $(this).fadeTo("4000",1.0); 
+    }
+);
+
+
   // JavaScript Chart
   var doughnutData = [{
       value: 70,
